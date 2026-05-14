@@ -37,4 +37,5 @@ There was an attempt to test MMM in real time, and there are around 100 days of 
 This model's features are focused on corporate financial performance
 It's features include most of what can be found in an earnings statement
 The Label is a binary price increase/decrease in 3 months (time between earnings statements)
+A test was done on 30/6, predicting for 30/9 in 2025 in real time.
 **Results to a backtest can be found here:** [Test Results](https://docs.google.com/document/d/1z2lgCBkZYBcSDsVXGFmwE6wy1ZqUUPOH2-Eq_aH-SOw/edit?tab=t.0)
