@@ -4,9 +4,7 @@ An active quantitative research sandbox built with AI expert Paul Fraley.
 
 **Executive Summary:**   
 Currently in its 6th generation, this research archive tracks the evolution of a quantitative trading framework as it transitions from absolute directional price forecasting to a cross-sectional, sector-focused statistical arbitrage framework.
-
-**Core Objectives**
-Market Neutrality: Generating statistically significant alpha while minimizing systematic market exposure (low portfolio beta) consistently.  
+A main objective is to generate statistically significant alpha while minimizing systematic market exposure (low portfolio beta) consistently.  
 
 
 *Note: This is an active personal research archive. The current code prioritizes strategy testing and feature iteration over production execution speed. ALSO, I didn't clean the code for readability*
