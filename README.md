@@ -30,10 +30,11 @@ The Label is calculated using alpha z-scores, where the beta used in alpha calcu
 
 ## Real World **Testing** of MMM
 There was an attempt to test MMM in real time, and there are around 100 days of real time data. However I have not been very consistent, and therefore many days are missing.
-The data can be found in this spreadsheet: (WARNING, ITS MESESY) https://docs.google.com/spreadsheets/d/1Tl9RN8UAYyOtxA4UbgBR4Vc38VkxT11qlDkR5oxNZqU/edit?gid=975586702#gid=975586702
+**The data can be found in this spreadsheet:**
+[Test Results](https://docs.google.com/spreadsheets/d/1Tl9RN8UAYyOtxA4UbgBR4Vc38VkxT11qlDkR5oxNZqU/edit?gid=975586702#gid=975586702)
 
 ## Fundamental Analysis Expert (FAx)
 This model's features are focused on corporate financial performance
 It's features include most of what can be found in an earnings statement
 The Label is a binary price increase/decrease in 3 months (time between earnings statements)
-Results to a backtest can be found here: https://docs.google.com/document/d/1z2lgCBkZYBcSDsVXGFmwE6wy1ZqUUPOH2-Eq_aH-SOw/edit?tab=t.0
+**Results to a backtest can be found here:** [Test Results](https://docs.google.com/document/d/1z2lgCBkZYBcSDsVXGFmwE6wy1ZqUUPOH2-Eq_aH-SOw/edit?tab=t.0)
