@@ -22,7 +22,7 @@ Iterations between MMM1 to MMM3 were not significant
 This model's input data are very similar to previous MMMs but Labels are more sophisticated.
 Instead of 2 classes (increase/decrease), MMM4 has 6 labels ranging from very bear to very bull to find large movers.
 
-# MMM5 (in development & undergoing testing)
+## MMM5 (in development & undergoing testing)
 This model's features and labels are both different
 It has minimal features that all capture deviations between NDXT and stocks within NDXT
 The Label is calculated using alpha z-scores, where the beta used in alpha calculation is with reference to NDXT, not SPX
@@ -32,4 +32,8 @@ The Label is calculated using alpha z-scores, where the beta used in alpha calcu
 There was an attempt to test MMM in real time, and there are around 100 days of real time data. However I have not been very consistent, and therefore many days are missing.
 The data can be found in this spreadsheet: (WARNING, ITS MESESY) https://docs.google.com/spreadsheets/d/1Tl9RN8UAYyOtxA4UbgBR4Vc38VkxT11qlDkR5oxNZqU/edit?gid=975586702#gid=975586702
 
-## Fundemental Analysis Expert (FAx)
+## Fundamental Analysis Expert (FAx)
+This model's features are focused on corporate financial performance
+It's features include most of what can be found in an earnings statement
+The Label is a binary price increase/decrease in 3 months (time between earnings statements)
+Results to a backtest can be found here: https://docs.google.com/document/d/1z2lgCBkZYBcSDsVXGFmwE6wy1ZqUUPOH2-Eq_aH-SOw/edit?tab=t.0
