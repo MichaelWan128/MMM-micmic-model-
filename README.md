@@ -6,17 +6,8 @@ This is the 5th generation of the project, representing a shift from absolute pr
 
 
 ## Project Core & Goals
-* **Sector Market Neutrality:** Identifies relative winners and losers within the same sector of the Nasdaq Internet Index (NDXT) to execute pure spread trades. 
+* **Market Neutrality:** Generate statistically significant gains while remaning market neutral.
 * **Long/Short Execution:** longs and shorts the bullest and bearest K(5) stocks within NDXT.
-
-
-## Model Infrastructure & Labels
-The Labels are three classes (Bullish, Bearish, Neutral), determined by a stock's alpha z_score
-
-To execute precise cross-security ranking, the pipeline uses classification probabilities rather than raw model predictions:
-* **Directional Net Probability Scoring:** The system tracks the exact directional strength of a security by calculating a net metric: `bull_proba - bear_proba`.
-* **Cross-Asset Spread Ranking:** This weighted probability delta serves as a clear metric to isolate the absolute strongest ("bulliest") and absolute weakest ("bearest") assets relative to the index benchmark.
-
 
 
 *Note: This is an active personal research archive. The current code prioritizes strategy testing and feature iteration over production execution speed. ALSO, I didn't clean the code for readibility, sorry for that :(*
@@ -25,17 +16,20 @@ To execute precise cross-security ranking, the pipeline uses classification prob
 ## MMM1 - MMM3 (Retired)
 These models used hundreds of columns of technical indicators as input data to predict whether a stock's closing price will increase or decrease in a month.
 The top K(5) stocks with the highest and lowest probability of being bull are longed and shorted respectively.
+Iterations between MMM1 to MMM3 were not significant
 
 ## MMM4 (Retired)
 This model's input data are very similar to previous MMMs but Labels are more sophisticated.
 Instead of 2 classes (increase/decrease), MMM4 has 6 labels ranging from very bear to very bull to find large movers.
 
-## MMM5 (In Development)
-This model's features and labels are both different from before.
-There are minimal features in MMM5, and all capture deviations betweeen stocks in NDXT and NDXT.
-The classes are determined by a stocks alpha z_score, where alpha is calculated with reference to NDXT (ie beta is calculated with reference to NDXT, not SPX)
+# MMM5 (in development & undergoing testing)
+This model's features and labels are both different
+It has minimal features that all capture deviations between NDXT and stocks within NDXT
+The Label is calculated using alpha z-scores, where the beta used in alpha calculation is with reference to NDXT, not SPX
+"Bullarity" of a stock is calculated with probabilities of different classes of labels, and the bullest and bearest K(5) stocks are longed and shorted respectively.
 
 ## Real World **Testing** of MMM
 There was an attempt to test MMM in real time, and there are around 100 days of real time data. However I have not been very consistent, and therefore many days are missing.
 The data can be found in this spreadsheet: (WARNING, ITS MESESY) https://docs.google.com/spreadsheets/d/1Tl9RN8UAYyOtxA4UbgBR4Vc38VkxT11qlDkR5oxNZqU/edit?gid=975586702#gid=975586702
 
+## Fundemental Analysis Expert (FAx)
