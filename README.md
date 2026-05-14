@@ -14,13 +14,13 @@ I am currently on the 6th generation of the project, representing a shift from a
 
 
 ## MMM1 - MMM3 (Retired)
-These models used hundreds of columns of technical indicators as input data to predict whether a stock's closing price will increase or decrease in a month.  
+These models used hundreds of columns of technical indicators as input data to predict whether a stock's price movements in a month.
 The top K(5) stocks with the highest and lowest probability of being bull are longed and shorted respectively.  
 Iterations between MMM1 to MMM3 were not significant
 
 ## MMM4 (Retired)
 This model's input data are very similar to previous MMMs but Labels are more sophisticated.  
-Instead of 2 classes (increase/decrease), MMM4 has 6 labels ranging from very bear to very bull to find large movers.
+MMM4 increased the number of labels in order to find big movers.
 
 ## MMM5 (crashed and burned)
 This model used a Mixture-of-Experts (MoE) structure to isolate technical indicators into discrete sub-models (momentum, volume, trend, volatility).  
@@ -29,9 +29,9 @@ These inputs fed a final estimator to derive a "bullarity" score.
 
 ## MMM6 (in development & undergoing testing)
 This model's features and labels are both different  
-It has minimal features that all capture deviations between NDXT and stocks within NDXT  
-The Label is calculated using alpha z-scores, where the beta used in alpha calculation is with reference to NDXT, not SPX  
-"Bullarity" of a stock is calculated with probabilities of different classes of labels, and the bullest and bearest K(5) stocks are longed and shorted respectively.  
+It has minimal features that all capture deviations from market  
+The Label is calculated by manipulating alpha
+"Bullarity" of a stock is calculated, and the bullest and bearest K(5) stocks are longed and shorted respectively.  
 
 ## Real World **Testing** of MMM
 There was an attempt to test MMM in real time, and there are around 100 days of real time data. However I have not been very consistent, and therefore many days are missing.  
