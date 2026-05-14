@@ -1,22 +1,21 @@
 # MMM
 
-This is an active quantitative research sandbox built with AI expert Paul Fraley.
+An active quantitative research sandbox built with AI expert Paul Fraley.
 
-I am currently on the 6th generation of the project, representing a shift from absolute price forecasting to a sector-focused statistical arbitrage framework.
+**Executive Summary:**   
+Currently in its 6th generation, this research archive tracks the evolution of a quantitative trading framework as it transitions from absolute directional price forecasting to a cross-sectional, sector-focused statistical arbitrage framework.
+
+**Core Objectives**
+Market Neutrality: Generating statistically significant alpha while minimizing systematic market exposure (low portfolio beta) consistently.  
 
 
-## Project Core & Goals
-* **Market Neutrality:** Generate statistically significant gains while remaning market neutral.
-* **Long/Short Execution:** longs and shorts the bullest and bearest K(5) stocks within NDXT.
-
-
-*Note: This is an active personal research archive. The current code prioritizes strategy testing and feature iteration over production execution speed. ALSO, I didn't clean the code for readibility, sorry for that :(*
+*Note: This is an active personal research archive. The current code prioritizes strategy testing and feature iteration over production execution speed. ALSO, I didn't clean the code for readability*
 
 
 ## MMM1 - MMM3 (Retired)
 These models used hundreds of columns of technical indicators as input data to predict whether a stock's price movements in a month.
 The top K(5) stocks with the highest and lowest probability of being bull are longed and shorted respectively.  
-Iterations between MMM1 to MMM3 were not significant
+Iterations between MMM1 to MMM3 were not significant, moved from long-only to equity long short
 
 ## MMM4 (Retired)
 This model's input data are very similar to previous MMMs but Labels are more sophisticated.  
@@ -33,7 +32,7 @@ It has minimal features that all capture deviations from market
 The Label is calculated by manipulating alpha
 "Bullarity" of a stock is calculated, and the bullest and bearest K(5) stocks are longed and shorted respectively.  
 
-## Real World **Testing** of MMM
+## **Forward Testing** of MMM
 There was an attempt to test MMM in real time, and there are around 100 days of real time data. However I have not been very consistent, and therefore many days are missing.  
 **The data can be found in this spreadsheet:**  
 [Test Results](https://docs.google.com/spreadsheets/d/1Tl9RN8UAYyOtxA4UbgBR4Vc38VkxT11qlDkR5oxNZqU/edit?gid=975586702#gid=975586702)
