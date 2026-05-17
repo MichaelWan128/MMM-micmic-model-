@@ -27,7 +27,7 @@ These inputs fed a final estimator to derive a "bullarity" score.
 ## MMM6 (in development & undergoing testing)
 This model's features and labels are both different  
 It has minimal features that all capture deviations from market  
-The Label is calculated by manipulating alpha
+The Label is calculated by manipulating alpha  
 "Bullarity" of a stock is calculated, and the bullest and bearest K(5) stocks are longed and shorted respectively.  
 
 ## **Forward Testing** of MMM
