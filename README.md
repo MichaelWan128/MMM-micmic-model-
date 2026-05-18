@@ -29,6 +29,8 @@ This model's features and labels are both different
 It has minimal features that all capture deviations from market  
 The Label is calculated by manipulating alpha  
 "Bullarity" of a stock is calculated, and the bullest and bearest K(5) stocks are longed and shorted respectively.  
+## MMM6 Challanges:
+poor probability calibration. (potential solution: use better calibrated algorithms like logistic regression)
 
 ## **Forward Testing** of MMM
 There was an attempt to test MMM in real time, and there are around 100 days of real time data. However I have not been very consistent, and therefore many days are missing.  
